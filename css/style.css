@@ -182,9 +182,9 @@ a:focus {
         font-size: 36px;
     }
 
-    .intro .intro-body .intro-text {
+    .intro .intro-body .intro-text -
         font-size: 25px;
-    }
+    }    
 }
 
 .btn-circle {
@@ -263,13 +263,13 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 50px
-    padding-bottom: 50px;
+    padding-top: 115px;
+    padding-bottom: 115px;
 }
 
 .download-section {
     width: 100%;
-    padding: 25px 0px 125px 0px;
+    padding: 25px 0px 25px 0px;
     color: #222;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -285,11 +285,12 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 125px; 
+        padding-top: 115px; 
+        padding-bottom: 115px;
     }
 
     .download-section {
-        padding: 25px 0px 125px 0px;
+        padding: 25px 0px 25px 0px;
     }
 
     #map {
@@ -378,7 +379,7 @@ body {
 .section-heading {
     text-align: left;
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .section-heading-spacer {
@@ -388,7 +389,7 @@ body {
 }
 
 .lead {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     text-align: left;
 }
@@ -412,4 +413,8 @@ footer span.copyright {
 .contact {
     padding-top: 200px;
     padding-bottom: 200px; 
+}
+
+.email{
+    color: #4A7BC4;
 }
