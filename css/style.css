@@ -208,7 +208,7 @@ a:focus {
     outline: 0;
     color: #fff;
         /*background-color: rgba(33,68,120,.4);*/
-    background: rgba(255,255,255,.1);
+    background: rgba(255,255,255,.1);*/
 }
 
 .btn-circle i.animated {
@@ -270,7 +270,6 @@ a:focus {
 
 .download-section {
     width: 100%;
-    padding: 25px 0px 25px 0px;
     color: #222;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -412,7 +411,7 @@ footer span.copyright {
 }
 
 .contact {
-    padding-top: 200px;
+    padding-top: 138px;
     padding-bottom: 200px; 
 }
 
