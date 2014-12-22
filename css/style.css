@@ -182,9 +182,10 @@ a:focus {
         font-size: 36px;
     }
 
-    .intro .intro-body .intro-text -
+    .intro .intro-body .intro-text {
         font-size: 25px;
-    }    
+    }
+      
 }
 
 .btn-circle {
