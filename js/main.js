@@ -29,7 +29,52 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+function displayInterstitial(){
+    if (window.mmAPI) {
+        window.mmAPI.placeAd({
+        containerElementId: 'interstitialContainer',
+        apid: '200849',
+        placementType: 'interstitial',
+        allowLocation: true
+    });
+    }
+}
 
-var host = "routerkeygen.github.io";
-if ((host == window.location.host) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
+if (window.mmAPI) {
+    var windowSize = window.innerWidth,
+        height = 50;
+    if (windowSize > 728) {
+        windowSize = 728;
+        height = 90; 
+    } else if ( windowSize > 480 ) {
+        windowSize = 480;
+        height = 60;
+    } else if ( windowSize > 320 ) {
+        windowSize = 320;
+        height = 50;
+    }
+    window.mmAPI.placeAd({
+        containerElementId: 'aboutAdContainer',
+        apid: '200848',
+        placementType: 'inline',
+        width: windowSize,
+        height: height,
+        allowLocation: true
+    });
+    window.mmAPI.placeAd({
+        containerElementId: 'downloadAdContainer',
+        apid: '200847',
+        placementType: 'inline',
+        width: windowSize,
+        height: height,
+        allowLocation: true
+    });
+    window.mmAPI.placeAd({
+        containerElementId: 'contactAdContainer',
+        apid: '200846',
+        placementType: 'inline',
+        width: windowSize,
+        height: height,
+        allowLocation: true
+    });
+}

@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,31 +25,31 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="application-name" content="RouterKeygen">
-
     <title>Router Keygen</title>
-
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
+    <script>
+    var host = "routerkeygen.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+    <!-- Ads -->
+    <script src="http://cdn.millennialmedia.com/mmadlib/v1/mmadlib.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -62,7 +61,6 @@
                     <!-- <i class="fa fa-play-circle"></i> --><span class="light">RouterKeygen</span>
                 </a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
@@ -85,14 +83,12 @@
         </div>
         <!-- /.container -->
     </nav>
-
     <!-- Intro Header -->
     <header class="intro">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-
                         <img style="max-width:25%;" src="img/icon.svg" alt="Logo">
                         <br>
                         <br>
@@ -106,7 +102,6 @@
             </div>
         </div>
     </header>
-
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
@@ -115,7 +110,6 @@
                 <p> RouterKeygen is a free WPA/WEP key generator for several routers around the world.
             </div>
         </div>
-
         <div class="row">
             <div class="col-md-6">
                 <hr class="section-heading-spacer">
@@ -127,10 +121,7 @@
                 <img class="img-responsive center-block" style="max-width:50%;" src="img/scan.png" alt="">
             </div>
         </div>
-
         <br>
-
-
         <div class="row">
             <div class="col-md-6">
                 <hr class="section-heading-spacer">
@@ -142,39 +133,35 @@
                 <img class="img-responsive center-block" style="max-width:50%;" src="img/keys.png" alt="">
             </div>
         </div>
+        <div id="aboutAdContainer"></div>
     </section>
-
-
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- horizontal -->
-    <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-5245822343043415" data-ad-slot="4158765084"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
     <!-- Download Section -->
     <section id="download" class="content-section text-center bg-light-gray">
         <div class="download-section">
             <div class="container">
                 <div class="text-center">
+                    <div id="interstitialContainer"></div>
                     <h2>Download RouterKeygen</h2>
                     <!--<p>You can download RouterKeygen for free.</p> -->
                     <br>
                     <div class="row">
-                        <div class="col-md-6">
-                            <img class="img-responsive center-block" style="max-width:60%;" src="img/android.png" alt="">
-                            <br>
-                            <a href="https://github.com/routerkeygen/routerkeygenAndroid/releases/download/v3.12.0/routerkeygen-3-12-0.apk" class="btn btn-default btn-lg">Android</a>
+                        <div class="col-md-6" onclick="displayInterstitial()">
+                            <a href="https://github.com/routerkeygen/routerkeygenAndroid/releases/download/v3.12.0/routerkeygen-3-12-0.apk">
+                                <img class="img-responsive center-block" style="max-width:60%;" src="img/android.png" alt="">
+                                <br>
+                                <span class="btn btn-default btn-lg">Android</span>
+                            </a>
                         </div>
-
-                        <div class="col-md-6">
-
-                            <img class="img-responsive center-block" style="max-width:60%;" src="img/mac.png" alt="">
-
-                            <br>
-                            <a href="https://github.com/routerkeygen/routerkeygenPC/releases/download/v1.0.0/routerkeygen-1.0.0.exe" class="btn btn-default btn-lg">Windows</a>
+                        <div class="col-md-6" onclick="displayInterstitial()">
+                            <a href="https://github.com/routerkeygen/routerkeygenPC/releases/download/v1.0.0/routerkeygen-1.0.0.exe">
+                                <img class="img-responsive center-block" style="max-width:60%;" src="img/mac.png" alt="">
+                                <br>
+                                <span class="btn btn-default btn-lg">Windows</span>
+                            </a>
                         </div>
                     </div>
+                    <br>
+                    <br>
                     <br>
                     <p> If you like the application please consider donating to support us.</p>
                     <!--<p class="small"> Your donation will motivate the authors to improve on this great open-source tool.</p> -->
@@ -182,8 +169,8 @@
                 </div>
             </div>
         </div>
+        <div id="downloadAdContainer"></div>
     </section>
-
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center contact">
         <div class="row">
@@ -208,24 +195,20 @@
                 </ul>
             </div>
         </div>
+        <div id="contactAdContainer"></div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="container">
-            <span class="copyright">Copyright &copy; RouterKeygen 2014. All Rights Reserved</span>
+            <span class="copyright">Copyright &copy; RouterKeygen 2015. All Rights Reserved</span>
         </div>
     </footer>
-
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
     <!-- Custom Theme JavaScript -->
     <script src="js/main.js"></script>
     <script>
@@ -244,8 +227,6 @@
     ga('create', 'UA-55404374-2', 'auto');
     ga('send', 'pageview');
     </script>
-
-
 </body>
 
 </html>
